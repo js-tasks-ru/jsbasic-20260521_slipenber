@@ -1,5 +1,3 @@
-let inputData = '1 и -5.8 или 10 хотя 34 + -5.3 и 73';
-
 function getMinMax(str) {
   const num = str
     .split(' ')
@@ -9,5 +7,3 @@ function getMinMax(str) {
     const max = num.reduce((result, current) => result > current ? result : current)
       return {min, max};
 }
-
-console.log(getMinMax(inputData));
